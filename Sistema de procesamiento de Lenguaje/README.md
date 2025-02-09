@@ -88,6 +88,7 @@
             <li><code>programa.o</code>: El archivo de objeto que contiene el código ensamblado del programa.</li>
             <li><code>-lc</code>: Indica que se debe enlazar con la biblioteca estándar de C (libc.so), la cual contiene funciones como printf, malloc, etc.</li>
         </ul>
+        <p>El comando genera el ejecutable nombrado <code>ejecutable</code>
     </li>
 </ul>
 
