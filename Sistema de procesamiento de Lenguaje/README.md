@@ -103,7 +103,7 @@
     <li>Genere nuevamente el <code>archivo.i</code>. De preferencia asigne un nuevo nombre.
     </li>
     <li>¿Cambia en algo la ejecución final?
-        <p>sadf</p>
+        <p>Si, como definimos <code># define area(r) (PI * r * r)</code> el resultado va a ser <code># define area(r) (3.1415926535897 * r * r)</code> no <code>(3.1416 * r * r)</code></p>
     </li>
 </ul>
 
