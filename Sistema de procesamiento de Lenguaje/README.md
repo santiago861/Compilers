@@ -17,7 +17,8 @@
         <p>Las macros condicionales, definiciones y expansiones son resueltas. En el código, dado que la macro PI está comentada, el preprocesador elige la opción del 
         <code>#else</code>. Los comentarios, tanto los de linea como los de bloque son eliminados en el archivo preprocesado Las cabeceras estándar <code>#include<stdio.h></code>, <code>#include<stdlib.h></code> son expandidas, es decir, todo el contenido de esas cabeceras es copiado al archivo <code>programa.i</code>, por esto el archivo <code>programa.i</code> es mucho más grande.</p>
     <li>Compare el contenido de <code>programa.i</code> con el de <code>stdio.h</code> e indique de forma general las similitudes entre ambos archivos.</li>
-        <p>dsaf</p>
+        <p>Tienen similitudes en las definiciones de funciones estándar, como <code>printf</code>, así como en la presencia de tipos y macros estándar. Sin embargo, 
+        <code>programa.i</code> también contiene el código fuente del programa original y el contenido expandido de otras cabeceras (<code>stdlib.h</code>, etc.), mientras que <code>stdio.h</code> solo define las funciones y tipos relacionados con la entrada/salida estándar. Además, las directivas de preprocesador de <code>stdio.h</code> desaparecen en <code>programa.i</code>.</p>
     <li>¿A qué etapa corresponde este proceso?</li>
-        <p>dsaf</p>
+        <p>Corresponde a la fase de preprocesamiento del archivo <code>programa.c</code></p>
 </ul>
