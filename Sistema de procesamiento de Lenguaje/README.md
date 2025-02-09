@@ -87,7 +87,7 @@
             <li><code>/usr/lib/crt1.o</code>, <code>/usr/lib/crti.o</code>, <code>/usr/lib/crtn.o</code>: Archivos de inicialización utilizados para preparar el entorno de ejecución. <code>crt1.o</code>: Contiene el punto de entrada (_start) del programa. <code>crti.o</code> y <code>crtn.o</code>: Contienen código para la configuración inicial y final del programa.</li>
             <li><code>programa.o</code>: El archivo de objeto que contiene el código ensamblado del programa.</li>
             <li><code>-lc</code>: Indica que se debe enlazar con la biblioteca estándar de C (libc.so), la cual contiene funciones como printf, malloc, etc.</li>
-        <ul>
+        </ul>
     </li>
 </ul>
 
