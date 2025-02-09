@@ -63,7 +63,7 @@
 
 
 
-<h2>6. Encuentre la ruta de los siguientes archivos en el equipo de trabajo:</code>
+<h2>6. Encuentre la ruta de los siguientes archivos en el equipo de trabajo:</code></h2>
 <ul>
     <li>Scrt1.o
         <p>sadfadsf</p>
@@ -83,8 +83,8 @@
 </ul>
 
 
-<h2>7. Ejecute el siguiente comando, sustituyendo las rutas que encontró en el paso anterior:</h2>
-<code>ld -o ejecutable -dynamic-linker /lib/ld-linux-x86-64.so.2 /usr/lib/crt1.o /usr/lib/crti.o programa.o -lc /usr/lib/crtn.o</code>
+<h2>7. Ejecute el siguiente comando, sustituyendo las rutas que encontró en el paso anterior: <code>ld -o ejecutable -dynamic-linker /lib/ld-linux-x86-64.so.2 /usr/lib/crt1.o /usr/lib/crti.o programa.o -lc /usr/lib/crtn.o</code></h2>
+
 
 <ul>
     <li>En caso de que el comando <code>ld</code> mande errores, investigue como enlazar un programa utilizando el comando <code>ld</code>. Y proponga una posible solución para llevar a cabo este proceso con éxito.
