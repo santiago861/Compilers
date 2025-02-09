@@ -74,14 +74,20 @@
 
 
 <h2>7. Ejecute el siguiente comando, sustituyendo las rutas que encontró en el paso anterior: <code>ld -o ejecutable -dynamic-linker /lib/ld-linux-x86-64.so.2 /usr/lib/crt1.o /usr/lib/crti.o programa.o -lc /usr/lib/crtn.o</code></h2>
-<p>En este caso, como estamos usando clang, vamos a ejecutar simplemente <code>clang programa.o -o ejecutable</code>
+<p>En este caso, como estamos usando clang, vamos a ejecutar simplemente <code>clang programa.o -o ejecutable</code>.</p>
 
 <ul>
     <li>En caso de que el comando <code>ld</code> mande errores, investigue como enlazar un programa utilizando el comando <code>ld</code>. Y proponga una posible solución para llevar a cabo este proceso con éxito.
-        <p>sadfa</p>
     </li>
     <li>Describa el resultado obtenido al ejecutar el comando anterior.
-        <p>sadfa</p>
+        <p>En un entorno Linux el comando hace lo siguiente</p>
+        <ul>
+            <li><code>-dynamic-linker /lib/ld-linux-x86-64.so.2</code>: Especifica el dynamic linker del sistema Linux (cargador dinámico), responsable de cargar las bibliotecas compartidas en tiempo de ejecución.
+            </li>
+            <li><code>/usr/lib/crt1.o</code>, <code>/usr/lib/crti.o</code>, <code>/usr/lib/crtn.o</code>: Archivos de inicialización utilizados para preparar el entorno de ejecución. <code>crt1.o</code>: Contiene el punto de entrada (_start) del programa. <code>crti.o</code> y <code>crtn.o</code>: Contienen código para la configuración inicial y final del programa.</li>
+            <li><code>programa.o</code>: El archivo de objeto que contiene el código ensamblado del programa.</li>
+            <li><code>-lc</code>: Indica que se debe enlazar con la biblioteca estándar de C (libc.so), la cual contiene funciones como printf, malloc, etc.</li>
+        <ul>
     </li>
 </ul>
 
