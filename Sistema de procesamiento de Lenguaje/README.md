@@ -15,10 +15,29 @@
         <p>No logramos encontrar mucha similitud entre los archivo, el archivo <code>programa.i</code> es mucho más grande que <code>programa.c</code>.</p>
     <li>¿Qué pasa con las macros y los comentarios del código fuente original en <code>programa.i?</code></li>
         <p>Las macros condicionales, definiciones y expansiones son resueltas. En el código, dado que la macro PI está comentada, el preprocesador elige la opción del 
-        <code>#else</code>. Los comentarios, tanto los de linea como los de bloque son eliminados en el archivo preprocesado Las cabeceras estándar <code>#include<stdio.h></code>, <code>#include<stdlib.h></code> son expandidas, es decir, todo el contenido de esas cabeceras es copiado al archivo <code>programa.i</code>, por esto el archivo <code>programa.i</code> es mucho más grande.</p>
+        <code>#else</code>. Los comentarios, tanto los de linea como los de bloque son eliminados en el archivo preprocesado. Las cabeceras estándar <code>#include<stdio.h></code>, <code>#include<stdlib.h></code> son expandidas, es decir, todo el contenido de esas cabeceras es copiado al archivo <code>programa.i</code>, por esto el archivo <code>programa.i</code> es mucho más grande.</p>
     <li>Compare el contenido de <code>programa.i</code> con el de <code>stdio.h</code> e indique de forma general las similitudes entre ambos archivos.</li>
         <p>Tienen similitudes en las definiciones de funciones estándar, como <code>printf</code>, así como en la presencia de tipos y macros estándar. Sin embargo, 
         <code>programa.i</code> también contiene el código fuente del programa original y el contenido expandido de otras cabeceras (<code>stdlib.h</code>, etc.), mientras que <code>stdio.h</code> solo define las funciones y tipos relacionados con la entrada/salida estándar. Además, las directivas de preprocesador de <code>stdio.h</code> desaparecen en <code>programa.i</code>.</p>
     <li>¿A qué etapa corresponde este proceso?</li>
         <p>Corresponde a la fase de preprocesamiento del archivo <code>programa.c</code></p>
+</ul>
+
+
+<h2>4. Ejecute la siguiente instrucción: <code>gcc -Wall -S programa.i</code></h2>
+
+<p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -S programa.i -o programa.s</code>.</p>
+<ul>
+    <li>¿Para qué sirve la opción <code>-Wall</code>?
+        <p>asdfads</p>
+    </li>
+    <li>¿Qué le indica a gcc la opción <code>-S</code>?
+        <p>asdfads</p>
+    </li>
+    <li>¿Qué contiene el archivo de salida y cuál es su extensión?
+        <p>asdfads</p>
+    </li>
+    <li>¿A qué etapa corresponde este comando?
+        <p>asdfads</p>
+    </li>
 </ul>
