@@ -25,7 +25,7 @@
 
 
 <h2>4. Ejecute la siguiente instrucción: <code>gcc -Wall -S programa.i</code></h2>
-<h3>El compilador transforma el código preprocesado en un programa objeto en lenguaje ensamblador, que es posteriormente convertido en código máquina por el ensamblador.</h3>
+<h3>El compilador transforma el código preprocesado en un programa objeto en lenguaje ensamblador</h3>
 <p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -Wall -S programa.i -o programa.s</code>.</p>
 <ul>
     <li>¿Para qué sirve la opción <code>-Wall</code>?
@@ -44,43 +44,27 @@
 
 
 <h2>5. Ejecute la siguiente instrucción: <code>as programa.s -o programa.o</code></h2>
-
+<h3>El archivo <code>programa.s</code> es convertido en código máquina por el ensamblador.</h3>
 <p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -c programa.s -o programa.o</code>.</p>
 <ul>
     <li>Antes de revisarlo, indique cuál es su hipótesis sobre lo que debe contener el archivo con extensión <code>.o</code>.
-        <p>sadfdsf</p>
+        <p>Código máquina en formato binario</p>
     </li>
     <li>Diga de forma general qué contiene el archivo <code>programa.o</code> y por qué se visualiza de esa manera.
-        <p>sadfdsf</p>
+        <p>El archivo <code>programa.o</code> contiene código máquina y estructura binaria específica para la arquitectura y sistema operativo. Y se visualiza así porque el archivo está en formato binario, no en texto plano.</p>
     </li>
     <li>¿Qué programa se invoca con <code>as</code>?
-        <p>sadfdsf</p>
+        <p>Al ensamblador puro de GNU Binutils, parte del conjunto de herramientas de GCC. Está diseñado solo para ensamblar archivos <code>.s</code>.</p>
     </li>
     <li>¿A qué etapa corresponde la llamada a este programa?
-        <p>sadfdsf</p>
+        <p>Ejecuta la etapa de ensamblado</p>
     </li>
 </ul>
-
 
 
 <h2>6. Encuentre la ruta de los siguientes archivos en el equipo de trabajo:</code></h2>
-<ul>
-    <li>Scrt1.o
-        <p>sadfadsf</p>
-    </li>
-    <li>crti.o
-        <p>sadfadsf</p>
-    </li>
-    <li>crtbeginS.o
-        <p>sadfadsf</p>
-    </li>
-    <li>crtendS.o
-        <p>sadfadsf</p>
-    </li>
-    <li>crtn.o
-        <p>sadfadsf</p>
-    </li>
-</ul>
+<p><code>Scrt1.o</code>, <code>crti.o</code>, <code>crtbeginS.o</code>, <code>crtendS.o</code>, <code>crtn.o</code>.</p>
+<p>Estos archivos son específicos de sistemas Linux (glibc y GCC). En su lugar, macOS utiliza archivos equivalentes que están dentro del SDK del sistema de desarrollo</p>
 
 
 <h2>7. Ejecute el siguiente comando, sustituyendo las rutas que encontró en el paso anterior: <code>ld -o ejecutable -dynamic-linker /lib/ld-linux-x86-64.so.2 /usr/lib/crt1.o /usr/lib/crti.o programa.o -lc /usr/lib/crtn.o</code></h2>
