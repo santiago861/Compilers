@@ -1,6 +1,6 @@
 <h3>En el caso de clang vamos a usar los siguientes comandos</h3>
 <code>clang -E programa.c -o programa.i</code>  # Preprocesar <br>
-<code>clang -S programa.i -o programa.s</code>  # Compilar a ensamblador <br>
+<code>clang -Wall -S programa.i -o programa.s</code>  # Compilar a ensamblador <br>
 <code>clang -c programa.s -o programa.o</code>  # Generar código objeto <br>
 <code>clang programa.o -o programa</code>   # Enlazar y crear el ejecutable <br>
 
@@ -25,19 +25,19 @@
 
 
 <h2>4. Ejecute la siguiente instrucción: <code>gcc -Wall -S programa.i</code></h2>
-
-<p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -S programa.i -o programa.s</code>.</p>
+<h3>El compilador transforma el código preprocesado en un programa objeto en lenguaje ensamblador, que es posteriormente convertido en código máquina por el ensamblador.</h3>
+<p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -Wall -S programa.i -o programa.s</code>.</p>
 <ul>
     <li>¿Para qué sirve la opción <code>-Wall</code>?
-        <p>asdfads</p>
+        <p>Activa la mayoría de las advertencias durante la compilación, lo que puede mostrar mensajes sobre posibles problemas en el código.</p>
     </li>
     <li>¿Qué le indica a gcc la opción <code>-S</code>?
-        <p>asdfads</p>
+        <p>Indica que el compilador debe detenerse después de la fase de generación de código ensamblador.</p>
     </li>
     <li>¿Qué contiene el archivo de salida y cuál es su extensión?
-        <p>asdfads</p>
+        <p>Contiene el código ensamblador del programa, es decir, una representación de bajo nivel que será utilizada por el ensamblador para crear el código objeto en el siguiente paso.</p>
     </li>
     <li>¿A qué etapa corresponde este comando?
-        <p>asdfads</p>
+        <p>Corresponde a la etapa de generación de código ensamblador.</p>
     </li>
 </ul>
