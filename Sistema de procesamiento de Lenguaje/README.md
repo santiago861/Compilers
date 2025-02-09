@@ -5,7 +5,7 @@
 <code>clang programa.o -o programa</code>   # Enlazar y crear el ejecutable <br>
 
 
-<h2>3. Use el siguiente comando: <code>cpp programa.c programa.i</code> Revise el contenido de programa.i y conteste lo siguiente:</h2>
+<h2>3. Use el siguiente comando: <code>cpp programa.c programa.i</code> Revise el contenido de <code>programa.i</code> y conteste lo siguiente:</h2>
 <h3>El preprocesador recopila y expande macros y otros fragmentos de código abreviado en el programa fuente.</h3>
 <p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -E programa.c -o programa.i</code>.</p>
 <ul>
@@ -88,8 +88,8 @@
             <li><code>programa.o</code>: El archivo de objeto que contiene el código ensamblado del programa.</li>
             <li><code>-lc</code>: Indica que se debe enlazar con la biblioteca estándar de C (libc.so), la cual contiene funciones como printf, malloc, etc.</li>
         </ul>
-        <p>El comando genera el ejecutable nombrado <code>ejecutable</code>
     </li>
+    <p>El comando genera el ejecutable nombrado <code>ejecutable</code>
 </ul>
 
 
