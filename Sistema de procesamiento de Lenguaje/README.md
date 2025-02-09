@@ -64,11 +64,17 @@
 
 <h2>6. Encuentre la ruta de los siguientes archivos en el equipo de trabajo:</code></h2>
 <p><code>Scrt1.o</code>, <code>crti.o</code>, <code>crtbeginS.o</code>, <code>crtendS.o</code>, <code>crtn.o</code>.</p>
-<p>Estos archivos son específicos de sistemas Linux (glibc y GCC). En su lugar, macOS utiliza archivos equivalentes que están dentro del SDK del sistema de desarrollo</p>
+<p>Estos archivos son específicos de sistemas Linux (glibc y GCC). En su lugar, macOS utiliza archivos equivalentes que están dentro del SDK del sistema de desarrollo. Sus equivalentes más importantes en macOS son los siguientes:</p>
+<ul>
+    <li><code>crt1.o</code> – Equivalente a <code>Scrt1.o</code>, inicializa el entorno de ejecución antes de llamar a main.</li>
+    <li><code>dylib1.o</code>, <code>bundle1.o</code>, <code>lazydylib1.o</code> – Manejan bibliotecas dinámicas y otros tipos de binarios en macOS.</li>
+    <li><code>crti.o</code>, <code>crtbeginS.o</code>, <code>crtendS.o</code>, <code>crtn.o</code> no están en macOS, pero sus funciones son reemplazadas por otros archivos de inicialización.</li>
+</ul>
+
 
 
 <h2>7. Ejecute el siguiente comando, sustituyendo las rutas que encontró en el paso anterior: <code>ld -o ejecutable -dynamic-linker /lib/ld-linux-x86-64.so.2 /usr/lib/crt1.o /usr/lib/crti.o programa.o -lc /usr/lib/crtn.o</code></h2>
-
+<p>En este caso, como estamos usando clang, vamos a ejecutar simplemente <code>clang programa.o -o ejecutable</code>
 
 <ul>
     <li>En caso de que el comando <code>ld</code> mande errores, investigue como enlazar un programa utilizando el comando <code>ld</code>. Y proponga una posible solución para llevar a cabo este proceso con éxito.
@@ -82,7 +88,7 @@
 
 
 
-<h2>8. Una vez que se enlazó el código máquina relocalizable, podemos ejecutar el programa con la siguiente instrucción en la terminal: <code>./programa</code></h2>
+<h2>8. Una vez que se enlazó el código máquina relocalizable, podemos ejecutar el programa con la siguiente instrucción en la terminal: <code>./ejecutable</code></h2>
 
 
 <h2>9. Quite el comentario de la macro <code>#define PI</code> en el código fuente original y conteste lo siguiente:</h2>
