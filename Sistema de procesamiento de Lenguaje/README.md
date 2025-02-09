@@ -19,9 +19,11 @@
     </ul>
     <li>¿Qué pasa con las macros y los comentarios del código fuente original en programa.i?</li>
     <ul>
-        <p>Las macros condicionales, definiciones y expansiones son resueltas. En el código, dado que la macro PI está comentada, el preprocesador elige la opción del <code>#else</code</p><br>
+        <p>Las macros condicionales, definiciones y expansiones son resueltas. En el código, dado que la macro PI está comentada, el preprocesador elige la 
+        opción del <code>#else</code</p><br>
         <p>Los comentarios, tanto los de linea como los de bloque son eliminados en el archivo preprocesado</p><br>
-        <p>Las cabeceras estándar <code>#include <stdio.h></code>, <code>#include <stdlib.h></code> son expandidas, es decir, todo el contenido de esas cabeceras es copiado al archivo programa.i, por esto el archivo <code>programa.i</code> es mucho más grande
+        <p>Las cabeceras estándar <code>#include <stdio.h></code>, <code>#include <stdlib.h></code> son expandidas, es decir, todo el contenido de esas 
+        cabeceras es copiado al archivo programa.i, por esto el archivo <code>programa.i</code> es mucho más grande
     </ul>
     <li>Compare el contenido de programa.i con el de stdio.h e indique de forma general las similitudes entre ambos archivos.</li>
     <ul>
