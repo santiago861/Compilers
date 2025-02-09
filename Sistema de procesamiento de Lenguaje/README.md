@@ -13,15 +13,11 @@
         <p>Este comando ejecuta la fase de preprocesamiento del archivo <code>programa.c</code> y el resultado se guarda en <code>programa.i</code>.</p>
     <li>¿Qué similitudes encuentra entre los archivos <code>programa.c</code> y <code>programa.i</code>?</li>
         <p>No logramos encontrar mucha similitud entre los archivo, el archivo <code>programa.i</code> es mucho más grande que <code>programa.c</code>.</p>
-    <li>¿Qué pasa con las macros y los comentarios del código fuente original en programa.i?</li>
+    <li>¿Qué pasa con las macros y los comentarios del código fuente original en <code>programa.i?</code></li>
         <p>Las macros condicionales, definiciones y expansiones son resueltas. En el código, dado que la macro PI está comentada, el preprocesador elige la opción del 
         <code>#else</code>. Los comentarios, tanto los de linea como los de bloque son eliminados en el archivo preprocesado Las cabeceras estándar <code>#include<stdio.h></code>, <code>#include<stdlib.h></code> son expandidas, es decir, todo el contenido de esas cabeceras es copiado al archivo <code>programa.i</code>, por esto el archivo <code>programa.i</code> es mucho más grande.</p>
-    <li>Compare el contenido de programa.i con el de stdio.h e indique de forma general las similitudes entre ambos archivos.</li>
-    <ul>
+    <li>Compare el contenido de <code>programa.i</code> con el de <code>stdio.h</code> e indique de forma general las similitudes entre ambos archivos.</li>
         <p>dsaf</p>
-    </ul>
     <li>¿A qué etapa corresponde este proceso?</li>
-    <ul>
         <p>dsaf</p>
-    </ul>
 </ul>
