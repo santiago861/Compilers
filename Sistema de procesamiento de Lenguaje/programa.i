@@ -5,13 +5,6 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "programa.c" 2
-
-
-
-
-
-
-
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h" 1 3 4
 # 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h" 3 4
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h" 1 3 4
@@ -558,7 +551,7 @@ extern int __vsnprintf_chk (char * restrict, size_t, int, size_t,
        const char * restrict, va_list);
 # 500 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h" 2 3 4
 # 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h" 2 3 4
-# 9 "programa.c" 2
+# 2 "programa.c" 2
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h" 1 3 4
 # 58 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h" 3 4
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h" 1 3 4
@@ -2214,8 +2207,8 @@ unsigned long long
 
 extern char *suboptarg;
 # 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h" 2 3 4
-# 10 "programa.c" 2
-# 23 "programa.c"
+# 3 "programa.c" 2
+# 16 "programa.c"
 int main ( void ) {
 printf ("Hola Mundo !\n");
 float mi_area = (3.1416 * 3 * 3) ;

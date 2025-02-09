@@ -1,10 +1,3 @@
-// clang -E programa.c -o programa.i  # Preprocesar
-// clang -S programa.i -o programa.s  # Compilar a ensamblador
-// clang -c programa.s -o programa.o  # Generar código objeto
-// clang programa.o -o programa        # Enlazar y crear el ejecutable
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 //# define PI 3.1415926535897
