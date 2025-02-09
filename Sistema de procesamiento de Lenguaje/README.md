@@ -10,15 +10,15 @@
 <p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -E programa.c -o programa.i</code></p>
 <ul>
     <li>¿Qué ocurre cuando se invoca el comando cpp con esos argumentos?</li>
-        Este comando ejecuta la fase de preprocesamiento del archivo <code>programa.c</code> y el resultado se guarda en <code>programa.i</code>
+        Este comando ejecuta la fase de preprocesamiento del archivo <code>programa.c</code> y el resultado se guarda en <code>programa.i</code><br>
     <li>¿Qué similitudes encuentra entre los archivos programa.c y programa.i?</li>
-        No logramos encontrar mucha similitud entre los archivo, el archivo <code>programa.i</code> es mucho más grande que <code>programa.c</code>
+        No logramos encontrar mucha similitud entre los archivo, el archivo <code>programa.i</code> es mucho más grande que <code>programa.c</code><br>
     <li>¿Qué pasa con las macros y los comentarios del código fuente original en programa.i?</li>
         Las macros condicionales, definiciones y expansiones son resueltas. En el código, dado que la macro PI está comentada, el preprocesador elige la 
         opción del <code>#else</code>
         Los comentarios, tanto los de linea como los de bloque son eliminados en el archivo preprocesado
         Las cabeceras estándar <code>#include <stdio.h></code>, <code>#include <stdlib.h></code> son expandidas, es decir, todo el contenido de esas 
-        cabeceras es copiado al archivo programa.i, por esto el archivo <code>programa.i</code> es mucho más grande
+        cabeceras es copiado al archivo programa.i, por esto el archivo <code>programa.i</code> es mucho más grande<br>
     <li>Compare el contenido de programa.i con el de stdio.h e indique de forma general las similitudes entre ambos archivos.</li>
     <ul>
         <p>dsaf</p>
