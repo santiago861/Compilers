@@ -111,7 +111,7 @@
 <h2>9. Escribe un segundo programa en lenguaje C en el que agregue 4 directivas del preprocesador de C (cpp). Las directivas elegidas deben jugar algún papel en el significado del programa, ser distintas entre sí y diferentes de las utilizadas en el primer programa (aunque no están prohibidas si las requieren).</h2>
 <ul>
     <li>Explique su utilidad general y su función en particular para su programa.
-        <p></p>
+        <p>El programa se encuentra en la carpeta <code>segundoPrograma</code> en este mismo directorio y su utilidad está explicada en su propio <code>README.md</code></p>
     </li>
 </ul>
 
