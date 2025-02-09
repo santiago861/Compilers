@@ -10,9 +10,7 @@
 <p>En este caso estamos usando clang, por lo que para este punto utilizamos <code>clang -E programa.c -o programa.i</code></p>
 <ul>
     <li>¿Qué ocurre cuando se invoca el comando cpp con esos argumentos?</li>
-    <ul>
         <p>Este comando ejecuta la fase de preprocesamiento del archivo <code>programa.c</code> y el resultado se guarda en <code>programa.i</code></p><br>
-    </ul>
     <li>¿Qué similitudes encuentra entre los archivos programa.c y programa.i?</li>
     <ul>
         <p>No logramos encontrar mucha similitud entre los archivo, el archivo <code>programa.i</code> es mucho más grande que <code>programa.c</code></p>
